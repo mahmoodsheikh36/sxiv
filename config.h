@@ -19,7 +19,8 @@ enum {
  */
 static const float zoom_levels[] = {
     5.0, 12.5,  25.0,  50.0,  75.0,
-	100.0, 150.0, 200.0, 400.0, 800.0, 1200.0
+	100.0, 150.0, 200.0, 400.0, 800.0, 1200.0, 1500.0, 2000.0,
+    2500.0, 4000.0, 40000.0
 };
 
 /* default slideshow delay (in sec, overwritten via -S option): */
@@ -48,7 +49,10 @@ static const bool ALPHA_LAYER = false;
 #ifdef _THUMBS_CONFIG
 
 /* thumbnail sizes in pixels (width == height): */
-static const int thumb_sizes[] = { 32, 64, 96, 128, 160 };
+static const int thumb_sizes[] = {
+    16, 32, 64, 96, 128, 160, 32*6, 32*7, 32*8, 32*9, 32*10,
+    32*11, 32*12, 32*13, 32*14, 32*15, 32*16, 32*17, 32*18, 32*19, 32*20, 32*22, 32*24
+};
 
 /* thumbnail size at startup, index into thumb_sizes[]: */
 static const int THUMB_SIZE = 3;
